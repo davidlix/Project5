@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+ <!-- Xiaofeng David Lin
+      November 7th 2012
+      Video Game Project 
+      Project 4 - v0.6-->
+    
+    <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <meta name="author"             content="Xiaofeng David Lin" />
+      <script type="text/JavaScript" src="project5done.js"></script>
+      <link rel="stylesheet" type="text/css" href="pj5.css"/> 
+      <title>CS Video Game</title>    
+    </head>
+        <h1 class="csstyle"> Welcome to David Lin's Video Game </h1>
+        <h2 class="dave"> CMPT 120 and CMSC 120 - Fall 2012</h2>
+        <h3 class="welcome">Welcome to Stranded Island text adventure Game! Have Fun!</h3>
+      <br>
+        <body onload = "StartingDisplay()">
+        <textarea id="taGame" rows="20" cols= "55" >
+        </textarea>
+      
+      <br>
+      <span style= "color: black;">Please Enter Command here </span>
+      <input type="text" 
+             size= "30"
+             id="txtCommand" 
+           
+      
+      <p>
+      <input type="button"
+             value="Go"
+             onclick="btn_go_click();"
+             id="idGo">
+           
+    </p>
+    
+    <p>
+     <input type= "button"
+            value= "Go North"
+            onclick= "move(north);"
+            id= "idNorth">
+     <br>
+     <br>
+     
+      <input type= "button"
+             value= "Go West"
+             onclick= "move(west);"
+             id= "idWest">
+             
+      <br>
+      <br>
+
+      <input type= "button"
+             value= "Go East"
+             onclick= "move(east);"
+             id= "idEast">     
+     <br>
+     <br>
+     
+      <input type= "button"
+             value= "Go South"
+             onclick= "move(south);"
+             id= "idSouth"> 
+     <br>      
+     <br>
+   
+    
+    <span id="scoreCounter"> Your current score is: <span id="score"> 0  </span> </span>
+      </p>
+    <a href="mailto:xiaofeng.lin1@marist.edu">Email</a>
+    </body>
+</html>
